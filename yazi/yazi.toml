@@ -1,0 +1,3 @@
+# ~/.config/yazi/yazi.toml
+[theme]
+path = "/usr/share/tokyonight-extra/yazi/tokyonight_night.toml"  # 指定主题文件路径

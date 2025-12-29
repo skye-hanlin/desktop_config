@@ -1,0 +1,105 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["custom/arch", "cpu", "temperature", "memory", "disk"],
+  "modules-center": ["hyprland/workspaces", "tray"],
+  "modules-right": ["backlight", "pulseaudio", "battery", "network", "clock"],
+  
+  "custom/arch": {
+    "format": "  ",
+    "tooltip": false
+  },
+  
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": []
+    },
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10"
+    }
+  },
+  
+  "clock": {
+    "format": "<span color='#b69bf1'> </span>{:%H:%M}",
+    "format-alt": "<span foreground='#b69bf1'>󰃭 </span><span>{:%I:%M %p %a %d}</span>",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  
+  "backlight": {
+    "device": "amdgpu_b10",
+    "format": "<span color='#d9b172'>{icon}</span> {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""]
+  },
+  
+  "network": {
+    "interface": "wlan0",
+    "format": "{ifname}",
+    "format-wifi": "<span color='#90cdfa'> </span>{essid}({signalStrength}%)",
+    "format-ethernet": "{ipaddr}/{cidr} 󰈀",
+    "format-disconnected": "<span color='#ff005f'>󰖪 </span>No Network",
+    "on-click": "iwgtk"
+  },
+  
+  "battery": {
+    "format": "<span color='#a8cd76'>{icon}</span> {capacity}%",
+    "format-icons": ["󰄛", "󰄜", "󰄝", "󰄞", "󰄟", "󰄠", "󰄡", "󰄢", "󰄣", "󰄤"],
+    "format-charging": "󰄥 {capacity}%"
+  },
+  
+  "pulseaudio": {
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "format": "<span color='#f7768e'></span> {volume}%",
+    "format-muted": "<span color='#f7768e'>󰝟</span>",
+    "tooltip": false
+  },
+  
+  "memory": {
+    "format": "<span foreground='#9ece6a'></span> {}%"
+  },
+  
+  "disk": {
+    "format": "<span foreground=\"#68b0d6\"></span> {}%",
+    "interval": 30,
+    "tooltip": false
+  },
+  
+  "tray": {
+    "icon-size": 20,
+    "reverse-direction": true,
+    "spacing": 6
+  },
+  
+  "cpu": {
+    "format": "<span foreground='#ff005f'></span>  {usage}%",
+    "interval": 5,
+    "tooltip": false
+  },
+  
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "<span foreground='#5d73ca'></span> {temperatureC}°C",
+    "format-critical": "<span foreground='#ff005f'></span> {temperatureC}°C",
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input"
+  }
+}
