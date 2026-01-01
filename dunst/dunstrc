@@ -13,21 +13,23 @@ progress_bar = true
 progress_bar_height = 6
 progress_bar_corner_radius = 3
 
-# TokyoNight Moon 紫色调主题 - 每个节单独设置超时，并统一使用紫色调背景
+# TokyoNight colors for dunst
+# For more configuration options see https://github.com/dunst-project/dunst/blob/master/dunstrc
+
 [urgency_low]
-    background = "#2c2f4f"         # 较深的紫色背景
-    foreground = "#c8d3f5"         # 前景色为TokyoNight Moon中的浅灰色
-    frame_color = "#7aa2f7"        # 使用TokyoNight Moon中的柔和蓝色作为边框颜色以提供对比度
+    background = "#1e2030"
+    foreground = "#c8d3f5"
+    frame_color = "#c8d3f5"
     timeout = 5  # 5秒
 
 [urgency_normal]
-    background = "#3a3e6f"         # 中等深度的紫色背景，比低紧急度稍亮
-    foreground = "#c8d3f5"         # 相同的前景色保持一致性
-    frame_color = "#bb9af7"        # 使用TokyoNight Moon中的亮紫色作为边框颜色
+    background = "#222436"
+    foreground = "#c8d3f5"
+    frame_color = "#c8d3f5"
     timeout = 5  # 5秒
 
 [urgency_critical]
-    background = "#4a4e8f"         # 更亮一些的紫色背景用于关键通知
-    foreground = "#ff9e64"         # 使用TokyoNight Moon中的橙色作为前景色，突出显示重要信息
-    frame_color = "#ff9e64"        # 同样的橙色边框增强视觉冲击力
+    background = "#2f334d"
+    foreground = "#c53b53"
+    frame_color = "#c53b53"
     timeout = 10  # 关键通知10秒
