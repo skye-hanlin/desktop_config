@@ -13,21 +13,21 @@ progress_bar = true
 progress_bar_height = 6
 progress_bar_corner_radius = 3
 
-# TokyoNight Moon 紫色主题 - 每个节单独设置超时，并统一使用紫色调背景
+# TokyoNight Moon 紫色调主题 - 每个节单独设置超时，并统一使用紫色调背景
 [urgency_low]
-    background = "#1a1b26"         # 和TokyoNight Moon背景颜色相匹配的深色背景
-    foreground = "#c0caf5"         # 前景色为TokyoNight Moon中的浅灰色
-    frame_color = "#7aa2f7"        # 使用TokyoNight Moon中的蓝色作为边框颜色以提供对比度
+    background = "#2c2f4f"         # 较深的紫色背景
+    foreground = "#c8d3f5"         # 前景色为TokyoNight Moon中的浅灰色
+    frame_color = "#7aa2f7"        # 使用TokyoNight Moon中的柔和蓝色作为边框颜色以提供对比度
     timeout = 5  # 5秒
 
 [urgency_normal]
-    background = "#24283b"         # 较深的背景颜色，增加对比度
-    foreground = "#c0caf5"         # 相同的前景色保持一致性
+    background = "#3a3e6f"         # 中等深度的紫色背景，比低紧急度稍亮
+    foreground = "#c8d3f5"         # 相同的前景色保持一致性
     frame_color = "#bb9af7"        # 使用TokyoNight Moon中的亮紫色作为边框颜色
     timeout = 5  # 5秒
 
 [urgency_critical]
-    background = "#2f334d"         # 更深的背景颜色用于关键通知
+    background = "#4a4e8f"         # 更亮一些的紫色背景用于关键通知
     foreground = "#ff9e64"         # 使用TokyoNight Moon中的橙色作为前景色，突出显示重要信息
     frame_color = "#ff9e64"        # 同样的橙色边框增强视觉冲击力
     timeout = 10  # 关键通知10秒
